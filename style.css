@@ -1,0 +1,145 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  background-color: #f3eae3;
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  width: 60rem;
+  height: 45rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .card {
+    width: 37.5rem;
+    height: 65rem;
+  }
+}
+.card__right {
+  width: 50%;
+  padding: 3.5rem;
+}
+@media (max-width: 600px) {
+  .card__right {
+    width: 100%;
+    padding: 3rem;
+  }
+}
+.card__left {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .card__left {
+    width: 100%;
+    height: 26.5rem;
+  }
+}
+.card__type {
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+.card__heading {
+  font-size: 3.1rem;
+  font-family: Fraunces;
+  margin-bottom: 1.5rem;
+}
+.card__content {
+  font-family: Montserrat;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.card__price-box {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.card__price {
+  font-size: 3.1rem;
+  font-family: Fraunces;
+  color: #3c8067;
+  margin-right: 2rem;
+}
+.card__discount {
+  font-size: 1.4rem;
+  font-family: Montserrat;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: line-through;
+}
+
+.btn {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f2ebe3;
+  width: 100%;
+  padding: 1.5rem 0;
+  transition: all 0.5s;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+.btn-green {
+  background-color: #3c8067;
+}
+.btn__icon {
+  margin-right: 1rem;
+}
+.btn:hover {
+  color: #f2ebe3;
+  background-color: #3c8067;
+  transform: translateY(-3px);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.6);
+}
+.btn:active, .btn:focus {
+  color: #f2ebe3 !important;
+  background-color: rgb(60, 128, 103) !important;
+  border: none;
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.attribution {
+  font-family: Montserrat;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: #6c7289;
+}
+.attribution a:link, .attribution a:visited {
+  color: #3c8067;
+  font-family: Fraunces;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

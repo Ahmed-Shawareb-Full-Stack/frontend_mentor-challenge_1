@@ -1,0 +1,176 @@
+//* ─── Variables ───────────────────────────────────────────────────────────────
+
+//? ─── Colors ──────────────────────────────────────────────────────────────────
+$color-primary: #3c8067;
+$color-secondary: #f2ebe3;
+$very-dark-blue: #1c232b;
+$dark-grayish-blue: #6c7289;
+$white: #ffffff;
+//? ─── Fonts ───────────────────────────────────────────────────────────────────
+$default-font-size: 1.4rem;
+
+//* ─── Styles ──────────────────────────────────────────────────────────────────
+
+//& ─── Base ────────────────────────────────────────────────────────────────────
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+//& ─── Card ────────────────────────────────────────────────────────────────────
+main {
+  background-color: #f3eae3;
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  width: 60rem;
+  height: 45rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  overflow: hidden;
+
+  @media (max-width: 600px) {
+    width: 37.5rem;
+    height: 65rem;
+  }
+
+  &__right {
+    width: 50%;
+    padding: 3.5rem;
+
+    @media (max-width: 600px) {
+      width: 100%;
+      padding: 3rem;
+    }
+  }
+
+  &__left {
+    width: 50%;
+
+    @media (max-width: 600px) {
+      width: 100%;
+      height: 26.5rem;
+    }
+  }
+
+  &__type {
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+  }
+
+  &__heading {
+    font-size: 3.1rem;
+    font-family: Fraunces;
+    margin-bottom: 1.5rem;
+  }
+
+  &__content {
+    font-family: Montserrat;
+    color: rgba($color: #000, $alpha: 0.6);
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__price-box {
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__price {
+    font-size: 3.1rem;
+    font-family: Fraunces;
+    color: $color-primary;
+    margin-right: 2rem;
+  }
+
+  &__discount {
+    font-size: 1.4rem;
+    font-family: Montserrat;
+    color: rgba($color: #000, $alpha: 0.6);
+    text-decoration: line-through;
+  }
+}
+
+.btn {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f2ebe3;
+  width: 100%;
+  padding: 1.5rem 0;
+  transition: all 0.5s;
+  margin-bottom: 2rem;
+
+  border-radius: 5px;
+
+  &-green {
+    background-color: #3c8067;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    color: #f2ebe3;
+    background-color: #3c8067;
+    transform: translateY(-3px);
+    box-shadow: 0 1.5rem 3rem rgba($color: #000000, $alpha: 0.6);
+  }
+
+  &:active,
+  &:focus {
+    color: #f2ebe3 !important;
+    background-color: rgb(60, 128, 103) !important;
+    border: none;
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.4);
+  }
+}
+
+.attribution {
+  font-family: Montserrat;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  a {
+    &:link,
+    &:visited {
+      color: #3c8067;
+      font-family: Fraunces;
+      text-decoration: none;
+    }
+  }
+  color: #6c7289;
+}
